@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Institute Management System</h1>
+        <h2>Enter your details and enroll yourself now!</h2>
+        <div class="student-info">
+            <form id="student-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="roll-number" placeholder="Roll Number" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <select id="grade" required>
+                    <option value="">Select Course</option>
+                    <option value="B.Tech">Bachelors in Technology</option>
+                    <option value="B.Ba">Bachelors in Business Administration</option>
+                    <option value="B.Sc">Bachelors in Science</option>
+                    <option value="B.Ca">Bachelors in Computer Applications</option>
+                    <option value="B.A">Bachelors in Arts</option>
+                </select>
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+        <div id="student-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
